@@ -2,6 +2,12 @@
 title: "Visit"
 ---
 
+::: {.hero}
+<span class="eyebrow">Plan ahead</span>
+
+## Hours, admission, and getting here
+:::
+
 ## Hours
 
 | Day | Hours |
@@ -21,8 +27,8 @@ title: "Visit"
 
 ## Location
 
-Werkbank Museum
-Gestaltungsweg 12
+Werkbank Museum<br>
+Gestaltungsweg 12<br>
 3000 Bern, Switzerland
 
 ## Getting there

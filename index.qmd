@@ -3,12 +3,11 @@ title: "Werkbank Museum of Design & Technology"
 ---
 
 ::: {.hero}
+<span class="eyebrow">Design & technology, since 1991</span>
+
 ## Where objects tell the story of how we think
 
-The Werkbank Museum traces the history of design and technology through the
-everyday objects that shaped it: typewriters, circuit boards, chairs,
-telephones, and the machines that made them. Come see how good design solves
-problems you didn't know you had.
+<p class="lede">The Werkbank Museum traces the history of design and technology through the everyday objects that shaped it — typewriters, circuit boards, chairs, telephones, and the machines that made them.</p>
 :::
 
 ## Highlights from the collection
@@ -16,16 +15,22 @@ problems you didn't know you had.
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
+<span class="index-number">01</span>
+
 ### Typewriters to Trackpads
 A century of how we've talked to machines, and how they've talked back.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
+<span class="index-number">02</span>
+
 ### The Chair as Machine
 Thonet to Aeron: seating as an engineering problem.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
+<span class="index-number">03</span>
+
 ### Circuits & Silicon
 From vacuum tubes to the first microprocessors, under glass.
 :::

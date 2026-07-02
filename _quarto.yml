@@ -4,6 +4,7 @@ project:
 website:
   title: "Werkbank Museum"
   navbar:
+    type: light
     left:
       - href: index.qmd
         text: Home
@@ -13,13 +14,16 @@ website:
         text: Visit
       - href: about.qmd
         text: About
+  page-footer:
+    border: false
+    left: "Werkbank Museum · Gestaltungsweg 12, 3000 Bern"
+    right: "Tue–Fri 10–18 · Sat–Sun 10–20 · Mon closed"
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      - theme.scss
+    include-in-header: _includes/fonts.html
     toc: false
 
 

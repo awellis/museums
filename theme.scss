@@ -1,0 +1,205 @@
+/*-- scss:defaults --*/
+
+// Base palette (hex here so Bootstrap's internal Sass color math keeps working;
+// the real perceptual scale lives in the oklch custom properties below).
+$ink:    #17130f;
+$paper:  #faf8f6;
+$muted:  #6b6a67;
+$line:   #ddd9d4;
+$accent: #c93d17;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $ink;
+$link-hover-color: $accent;
+$border-color: $line;
+
+$font-family-sans-serif: "Archivo", Helvetica, Arial, sans-serif;
+$headings-font-family: "Archivo", Helvetica, Arial, sans-serif;
+$headings-font-weight: 800;
+$headings-color: $ink;
+$font-size-root: 17px;
+$body-line-height: 1.55;
+
+$enable-rounded: false;
+$enable-shadows: false;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $accent;
+
+$table-border-color: $line;
+$table-color: $ink;
+
+/*-- scss:rules --*/
+
+:root {
+  --ink: oklch(16% 0.015 40);
+  --paper: oklch(98% 0.004 60);
+  --muted: oklch(48% 0.012 45);
+  --line: oklch(87% 0.008 45);
+  --accent: oklch(52% 0.19 35);
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 3rem;
+  --space-2xl: 6rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-lg: 1.375rem;
+  --text-xl: clamp(1.75rem, 1.35rem + 1.6vw, 2.75rem);
+  --text-display: clamp(2.75rem, 1.9rem + 4vw, 5.5rem);
+}
+
+body {
+  font-optical-sizing: auto;
+}
+
+// Condensed, wide-tracked, uppercase treatment for labels/eyebrows —
+// mirrors MoMA Sans Condensed used for wayfinding and metadata.
+.eyebrow,
+.index-number,
+nav.navbar .nav-link,
+.navbar-title,
+caption,
+th {
+  font-family: "Archivo Narrow", "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+// ---- Navbar ----
+.navbar {
+  border-bottom: 1px solid var(--line);
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+.navbar-title {
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+}
+.navbar .nav-link {
+  font-size: var(--text-xs);
+  padding-left: var(--space-md) !important;
+  padding-right: 0 !important;
+  color: var(--ink);
+  opacity: 1;
+}
+.navbar .nav-link:hover {
+  color: var(--accent);
+}
+
+// ---- Headings & body copy ----
+h1, .h1 {
+  font-size: var(--text-display);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+}
+h2, .h2 {
+  font-size: var(--text-xl);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--line);
+}
+h3, .h3 {
+  font-size: var(--text-lg);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+p {
+  max-width: 68ch;
+}
+main.content {
+  padding-top: var(--space-xl);
+}
+
+// ---- Hero ----
+.hero {
+  padding: 0 0 var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+.hero h1, .hero h2 {
+  border-top: none;
+  margin-top: var(--space-sm);
+  padding-top: 0;
+}
+.hero .lede {
+  font-size: var(--text-lg);
+  color: var(--muted);
+  max-width: 52ch;
+  margin-top: var(--space-md);
+}
+
+// ---- Numbered exhibit grid (replaces boxed cards) ----
+.grid > .g-col-12,
+.grid > [class*="g-col-"] {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-md);
+}
+.index-number {
+  display: block;
+  color: var(--accent);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-sm);
+}
+
+// ---- "Now on view" banner (reversed color block) ----
+.banner {
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--space-xl) var(--space-lg);
+  margin: var(--space-2xl) 0;
+}
+.banner .eyebrow {
+  color: var(--accent);
+}
+.banner h3 {
+  color: var(--paper);
+  margin-top: var(--space-sm);
+}
+.banner a {
+  color: var(--paper);
+  text-decoration-color: var(--accent);
+}
+
+// ---- Tables (Visit page: hours/admission) ----
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th {
+  border-bottom: 2px solid var(--ink);
+  padding: var(--space-sm) var(--space-md) var(--space-sm) 0;
+  text-align: left;
+}
+.table td {
+  border-bottom: 1px solid var(--line);
+  padding: var(--space-sm) var(--space-md) var(--space-sm) 0;
+}
+
+// ---- Links ----
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+// ---- Footer ----
+.page-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: var(--space-lg);
+}

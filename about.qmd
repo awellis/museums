@@ -2,6 +2,12 @@
 title: "About"
 ---
 
+::: {.hero}
+<span class="eyebrow">Founded 1991</span>
+
+## Every object embeds a decision
+:::
+
 ## Our mission
 
 The Werkbank Museum collects, preserves, and exhibits the objects of design
