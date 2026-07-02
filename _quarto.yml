@@ -1,8 +1,13 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Werkbank Museum"
+  reader-mode: false
+  page-navigation: true
+  back-to-top-navigation: true
+
   navbar:
     type: light
     left:
@@ -25,6 +30,3 @@ format:
       - theme.scss
     include-in-header: _includes/fonts.html
     toc: false
-
-
-
