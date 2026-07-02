@@ -1,0 +1,23 @@
+---
+title: "About"
+---
+
+## Our mission
+
+The Werkbank Museum collects, preserves, and exhibits the objects of design
+and technology that shaped how people work, communicate, and live. We
+believe everyday objects deserve the same close looking as fine art: every
+switch, seat, and circuit board embeds a decision about how it should feel
+to be human.
+
+## History
+
+The museum grew out of a private collection of typewriters and drafting
+tools assembled by engineer and design historian Elsa Reinhardt starting in
+the 1970s. What began as a personal archive in a converted workshop
+("Werkbank" is German for workbench) opened to the public in 1991 and has
+since expanded to cover computing, furniture, and household technology.
+
+## Visiting
+
+For hours, admission, and directions, see the [Visit](visit.qmd) page.
